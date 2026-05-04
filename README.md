@@ -26,10 +26,11 @@ PcapSleuth-Project/
 │   └── analysis_results.csv   # Structured Forensic Evidence
 ├── requirements.txt     # Environment Dependencies
 └── .gitignore           # Optimized for Git hygiene (Excludes PCAP/Venv)
-🛠️ Installation & Execution
-Clone the environment:
 
-Bash
+## 🛠️ Installation & Execution
+
+### **Clone the environment:**
+```bash
 git clone [https://github.com/YOUR_USERNAME/PcapSleuth-Project.git](https://github.com/YOUR_USERNAME/PcapSleuth-Project.git)
 cd PcapSleuth-Project
 Setup Dependencies:
