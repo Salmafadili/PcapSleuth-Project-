@@ -1,13 +1,49 @@
-# PcapSleuth-Project-
-Outil DFIR de détection d'anomalies réseau. Analyse automatisée de fichiers PCAP pour l'identification de menaces (Port Scanning, Brute Force, etc.)
-# PcapSleuth
-Outil de Digital Forensics & Incident Response (DFIR) pour l'analyse de fichiers PCAP.
+# 🛡️ PcapSleuth: Network Traffic Anomaly Detection Tool
 
-## Description
-PcapSleuth est un outil développé pour automatiser la détection d'anomalies dans le trafic réseau. Il permet de parser les fichiers PCAP et d'identifier les comportements suspects.
+**PcapSleuth** is a Digital Forensics and Incident Response (DFIR) tool developed as part of a technical internship project. It automates the triage and analysis of network traffic, transforming raw PCAP data into actionable security intelligence to identify threats that are often missed during manual inspection.
 
-## Fonctionnalités
-- Parsing de fichiers PCAP (via Scapy).
-- Détection automatique d'anomalies (Port Scanning, ...).
-- Génération de rapports d'analyse.
+---
+
+## 🌟 Key Value Proposition
+In modern security environments, manual analysis of thousands of packets is inefficient. **PcapSleuth** bridges this gap by:
+*   **Automating Metadata Extraction**: Instant identification of Source/Destination IPs, MAC addresses, and protocols.
+*   **Behavioral Threat Detection**: Algorithmic detection of reconnaissance activities like **Port Scanning**.
+*   **Contextual Awareness**: Extracting hostnames from DHCP traffic to identify devices within the internal network.
+
+## 🚀 Technical Features
+*   **Deep Packet Inspection (DPI)**: Utilizes `Scapy` to parse complex network layers (IP, TCP, UDP, DHCP).
+*   **Security Heuristics**: Implements threshold-based detection to alert on suspicious scanning behavior (e.g., a single IP scanning multiple unique ports).
+*   **Data Science Integration**: Uses `Pandas` for high-speed packet processing and structured data export (CSV).
+*   **Visual Intelligence**: Generates automated traffic distributions using `Matplotlib` to highlight anomalies visually.
+
+## 📂 Project Architecture
+```text
+PcapSleuth-Project/
+├── src/
+│   └── parser.py        # Core Logic: Extraction, Detection, & Visualization
+├── data/
+│   ├── traffic_chart.png      # Automated Visual Output
+│   └── analysis_results.csv   # Structured Forensic Evidence
+├── requirements.txt     # Environment Dependencies
+└── .gitignore           # Optimized for Git hygiene (Excludes PCAP/Venv)
+🛠️ Installation & Execution
+Clone the environment:
+
+Bash
+git clone [https://github.com/YOUR_USERNAME/PcapSleuth-Project.git](https://github.com/YOUR_USERNAME/PcapSleuth-Project.git)
+cd PcapSleuth-Project
+Setup Dependencies:
+
+Bash
+pip install -r requirements.txt
+Analyze:
+Place your forensic .pcap file in the data/ directory and run:
+
+Bash
+python src/parser.py
+📊 Internship Lab Implementation
+This tool was implemented and tested within a Virtual Security Lab involving pfSense and Ubuntu Server. It serves as the "Analysis Layer," providing the necessary forensic data to configure Firewall rules and mitigate identified threats in real-time.
+
+Developed by: Salma Fadili
+Collaborator (Forensic Analysis): Imane Bouhoute 
 
