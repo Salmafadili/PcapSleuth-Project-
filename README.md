@@ -27,24 +27,4 @@ PcapSleuth-Project/
 ├── requirements.txt     # Environment Dependencies
 └── .gitignore           # Optimized for Git hygiene (Excludes PCAP/Venv)
 
-## 🛠️ Installation & Execution
-
-### **Clone the environment:**
-```bash
-git clone [https://github.com/YOUR_USERNAME/PcapSleuth-Project.git](https://github.com/YOUR_USERNAME/PcapSleuth-Project.git)
-cd PcapSleuth-Project
-Setup Dependencies:
-
-Bash
-pip install -r requirements.txt
-Analyze:
-Place your forensic .pcap file in the data/ directory and run:
-
-Bash
-python src/parser.py
-📊 Internship Lab Implementation
-This tool was implemented and tested within a Virtual Security Lab involving pfSense and Ubuntu Server. It serves as the "Analysis Layer," providing the necessary forensic data to configure Firewall rules and mitigate identified threats in real-time.
-
-Developed by: Salma Fadili
-Collaborator (Forensic Analysis): Imane Bouhoute 
 
