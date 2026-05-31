@@ -18,13 +18,25 @@ In modern security environments, manual analysis of thousands of packets is inef
 
 ## 📂 Project Architecture
 ```text
-PcapSleuth-Project/
-├── src/
-│   └── parser.py        # Core Logic: Extraction, Detection, & Visualization
-├── data/
-│   ├── traffic_chart.png      # Automated Visual Output
-│   └── analysis_results.csv   # Structured Forensic Evidence
-├── requirements.txt     # Environment Dependencies
-└── .gitignore           # Optimized for Git hygiene (Excludes PCAP/Venv)
+PCAPSLEUTH/
+│
+├── data/                             # Data directory for network captures and outputs
+│   ├── 2025-01-22-traffic-analysis... # Real malware PCAP file used for baseline validation
+│   ├── analysis_results.csv          # Generated analysis results report in CSV format
+│   ├── exercise.pcap.zip             # Compressed archive containing the capture file
+│   └── traffic_chart.png             # Generated visualization chart of network traffic
+│
+├── src/                              # Source code directory
+│   └── parser.py                     # Main Python script for parsing and intrusion detection
+│
+├── venv/                             # Python Virtual Environment
+│   ├── Include/
+│   ├── Lib/
+│   ├── Scripts/
+│   └── share/
+│
+├── .gitignore                        # Git exclusion file (e.g., ignoring large PCAP files)
+├── README.md                         # Project documentation (This file)
+└── requirements.txt                  # List of required external libraries (Scapy, Pandas, etc.)
 
 
