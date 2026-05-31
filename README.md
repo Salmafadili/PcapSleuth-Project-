@@ -18,25 +18,20 @@ In modern security environments, manual analysis of thousands of packets is inef
 
 ## 📂 Project Architecture
 ```text
-PCAPSLEUTH/
-│
-├── data/                             # Data directory for network captures and outputs
-│   ├── 2025-01-22-traffic-analysis... # Real malware PCAP file used for baseline validation
-│   ├── analysis_results.csv          # Generated analysis results report in CSV format
-│   ├── exercise.pcap.zip             # Compressed archive containing the capture file
-│   └── traffic_chart.png             # Generated visualization chart of network traffic
-│
-├── src/                              # Source code directory
-│   └── parser.py                     # Main Python script for parsing and intrusion detection
-│
-├── venv/                             # Python Virtual Environment
-│   ├── Include/
-│   ├── Lib/
-│   ├── Scripts/
-│   └── share/
-│
-├── .gitignore                        # Git exclusion file (e.g., ignoring large PCAP files)
-├── README.md                         # Project documentation (This file)
-└── requirements.txt                  # List of required external libraries (Scapy, Pandas, etc.)
+PcapSleuth-Project/
+├── data/
+│   ├── 2025-01-22-traffic-analysis-exercise.pcap  # Real-world traffic (Web Malware)
+│   ├── analysis_results.csv                       # Exported structured report
+│   ├── exercise.pcap.zip                         # Archive of the real-world traffic
+│   ├── scan.pcapng                                # Captured stealth scan traffic (Lab)
+│   └── traffic_chart.png                          # Generated statistical chart
+├── src/
+│   └── parser.py                                  # Core source code (Analysis Engine)
+├── venv/                                          # Python virtual environment
+├── .gitignore                                     # Git hygiene configuration
+├── pyvenv.cfg                                     # Virtual environment configuration
+├── attack.pcapng                                  # Raw capture of the attack (Root)
+├── README.md                                      # Project documentation
+└── requirements.txt                               # Software dependencies
 
 
